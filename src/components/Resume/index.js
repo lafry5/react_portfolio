@@ -1,21 +1,39 @@
 import React from 'react';
+
 function Resume() {
   return (
     <section className="my-5">
-      <h1 id="resume">Resume?</h1>
-          <div className="my-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+      <div className="my-2">
+      <p>
+        Download my <a href="https://www.linkedin.com/">resume</a>
         </p>
+        <h3>Front-end Proficiencies</h3>
+        <ul className="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>React</li>
+        </ul>
+        <h3>Back-end Proficiencies</h3>
+        <ul className="skills">
+          <li>APIs</li>
+          <li>Node</li>
+          <li>Express</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>REST</li>
+        </ul>
+        <h3>Tool Proficiencies</h3>
+        <ul className="skills"></ul>
+        <li>Git, GitHub</li>
+        <li>Heroku</li>
+        </ul>
       </div>
     </section>
   );
 }
 
 export default Resume;
+
