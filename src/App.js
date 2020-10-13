@@ -19,9 +19,7 @@ function App() {
       case 'Resume':
         return <Resume />;
       case 'Portfolio':
-        return <Gallery />
-        currentCategory={currentCategory};
-        
+        return <Gallery currentCategory={currentCategory} />;     
       default:
         return <About />;
     }

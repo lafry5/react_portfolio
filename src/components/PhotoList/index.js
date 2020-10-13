@@ -10,6 +10,9 @@ const PhotoList = ({ category }) => {
       name: 'Grocery aisle',
       category: 'portfolio',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      link: "https://lafry5.github.io/react_portfolio/.",
+      repo: "https://github.com/lafry5/react_portfolio"
+
     },
     {
       name: 'Grocery booth',
