@@ -1,59 +1,47 @@
 import React, { useState } from 'react';
-import Modal from '../Modal';
+import Project from "../Project";
 
-const PhotoList = ({ category }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentPhoto, setCurrentPhoto] = useState();
+function Portfolio() {
 
-  const [photos] = useState([
+
+  const [projects] = useState([
     {
-      name: 'Grocery aisle',
-      category: 'portfolio',
+      name: 'Gplogo',
+      category: 'project',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
       link: "https://lafry5.github.io/react_portfolio/.",
       repo: "https://github.com/lafry5/react_portfolio"
 
     },
     {
-      name: 'Grocery booth',
-      category: 'portfolio',
+      name: 'Screenshot1',
+      category: 'project',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Building exterior',
-      category: 'portfolio',
+      name: 'Samplescreenshot1',
+      category: 'project',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Restaurant table',
-      category: 'portfolio',
+      name: 'Techblog',
+      category: 'project',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Cafe interior',
-      category: 'portfolio',
+      name: 'Runbuddy',
+      category: 'project',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
   ]);
 
-  const currentPhotos = photos.filter((photo) => photo.category === category);
-
-  const toggleModal = (image, i) => {
-    setCurrentPhoto({ ...image, index: i });
-    setIsModalOpen(!isModalOpen);
-  };
-
   return (
     <div>
-      {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
       <div className="flex-row">
-        {currentPhotos.map((image, i) => (
-          <img
-            src={require(`../../assets/small/${category}/${i}.jpg`)}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            onClick={() => toggleModal(image, i)}
-            key={image.name}
+        {projects.map((project, idx) => (
+          <Project
+            project={project}
+            key={"project" + idx}
           />
         ))}
       </div>
@@ -61,4 +49,5 @@ const PhotoList = ({ category }) => {
   );
 };
 
-export default PhotoList;
+export default Portfolio;
+
