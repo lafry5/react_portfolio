@@ -4,8 +4,30 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
+
+  const [currentPage, handlePageChange] = useState('Home');
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'About Me':
+        return <About />;
+      case 'Contact':
+        return <ContactForm />;
+      case 'Resume':
+        return <Resume />;
+      case 'Portfolio':
+        return <Gallery />
+        currentCategory={currentCategory};
+        
+      default:
+        return <About />;
+    }
+  };
+
+
   const [categories] = useState([
     {
       name: 'portfolio',
@@ -22,7 +44,7 @@ function App() {
 
   return (
     <div>
-      <Nav
+      {/* <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
@@ -40,7 +62,10 @@ function App() {
           <ContactForm></ContactForm>
 
         )}
-      </main>
+      </main> */}
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div>{renderPage(currentPage)}</div>
+          <Footer></Footer>
     </div>
   );
 }
