@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../Footer';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -59,6 +60,7 @@ function ContactForm() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
+      <Footer></Footer> 
     </section>
   );
 }

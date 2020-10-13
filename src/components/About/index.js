@@ -1,5 +1,7 @@
 import React from 'react';
 import coverImage from '../../assets/cover/cover-image.jpg';
+import Footer from '../Footer';
+
 function About() {
   return (
     <section className="my-5">
@@ -14,10 +16,14 @@ function About() {
           justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
           dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
           Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-        </p>
-      </div>
-    </section>
+         </p>
+        </div> 
+        <Footer></Footer>   
+      </section>
   );
 }
 
 export default About;
+
+
+
