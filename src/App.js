@@ -8,7 +8,7 @@ import Resume from './components/Resume';
 function App() {
   const [categories] = useState([
     {
-      name: 'commercial',
+      name: 'portfolio',
       description: 'Screenshots of sample projects in my portfolio',
     },
     // { name: 'portraits', description: 'Portraits of people in my life' },
