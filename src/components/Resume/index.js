@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 function Resume() {
   return (
@@ -33,7 +33,7 @@ function Resume() {
         <li>Heroku</li>
         </ul>
       </div>
-      <Footer></Footer> 
+      {/* <Footer></Footer>  */}
     </section>
   );
 }

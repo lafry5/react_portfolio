@@ -1,27 +1,13 @@
 import React from 'react';
 
 function Footer() {
-
-  const icons = [
-    {
-      name: "fab fa-github",
-      link: "https://github.com/lafry5/"
-    },
-    {
-      name: "fab fa-linkedin",
-      link: "https://www.linkedin.com/in/lauraafry"
-    },
-  ]
-
+  
   return (
-    <footer className="flex-row px-1">
-      {icons.map(icon =>
-      (
-        <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
-      )
-        )}
-    </footer>
-  );
-}
+      <div className = "grid-item-info2"> 
+                  <span> (602) 363-0253 </span>
+                  <a href = "https://www.linkedin.com/in/lauraafry" class="fab fa-linkedin"> LinkedIn </a>
+                  <a href = "mailto:lafry5@yahoo.com" class="fab fa-github"> Email </a>
+      </div>
+  )};
 
 export default Footer;

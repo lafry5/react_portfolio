@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Project from "../Project";
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 function Portfolio() {
 
@@ -46,7 +46,7 @@ function Portfolio() {
           />
         ))}
       </div>
-      <Footer></Footer> 
+      {/* <Footer></Footer>  */}
     </div>
   );
 };

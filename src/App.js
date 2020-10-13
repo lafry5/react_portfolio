@@ -62,7 +62,9 @@ function App() {
         )}
       </main> */}
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      <div>{renderPage(currentPage)}</div>
+      <></>
+      <div>{renderPage(currentPage)}
+      </div>
           <Footer></Footer>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import coverImage from '../../assets/cover/cover-image.jpg';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 function About() {
   return (
@@ -18,7 +18,7 @@ function About() {
           Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
          </p>
         </div> 
-        <Footer></Footer>   
+        {/* <Footer></Footer>    */}
       </section>
   );
 }
