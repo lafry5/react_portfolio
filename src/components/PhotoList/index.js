@@ -9,30 +9,37 @@ function Portfolio() {
     {
       name: 'Gplogo',
       category: 'project',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      link: "https://lafry5.github.io/react_portfolio/.",
-      repo: "https://github.com/lafry5/react_portfolio"
-
+      description: 'Xpensifi (gplogo) is a budget tracker to manage monthly income and expenses',
+      link: "https://lafry5.github.io/first-group-project/",
+      repo: "https://github.com/lafry5/first-group-project"
     },
     {
       name: 'Screenshot1',
       category: 'project',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'Weather Dashboard (screenshot1) projects the upcoming weather for any city for 5 days',
+      link: "https://lafry5.github.io/Weather-dashboard/",
+      repo: "https://github.com/lafry5/Weather-dashboard"
     },
     {
-      name: 'Samplescreenshot1',
+      name: 'homepagebackground',
       category: 'project',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'The Employee Management System (homepagebackground) monitors employees pto, sick and holiday time',
+      link: "https://fast-everglades-76261.herokuapp.com/",
+      repo: "https://github.com/cullinans1/employee-management-system/tree/master"
     },
     {
       name: 'Techblog',
       category: 'project',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'Tech Blog allows users to add and comment on blogs on a blog site',
+      link: "https://protected-dusk-01068.herokuapp.com/",
+      repo: "https://github.com/lafry5/tech_blog"
     },
     {
       name: 'Runbuddy',
       category: 'project',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'Run buddy is a site that provides an overview of the trainers and their services',
+      link: "https://lafry5.github.io/run-buddy/",
+      repo: "https://github.com/lafry5/run-buddy"
     },
   ]);
 

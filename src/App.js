@@ -28,7 +28,7 @@ function App() {
 
   const [categories] = useState([
     {
-      name: 'portfolio',
+      name: '',
       description: 'Screenshots of sample projects in my portfolio',
     },
     // { name: 'portraits', description: 'Portraits of people in my life' },
