@@ -37,7 +37,7 @@ function Portfolio() {
     {
       name: 'Runbuddy',
       category: 'project',
-      description: 'Run buddy is a site that provides an overview of the trainers and their services',
+      description: 'Run buddy is a site that provides an overview of athletic trainers and their services',
       link: "https://lafry5.github.io/run-buddy/",
       repo: "https://github.com/lafry5/run-buddy"
     },
